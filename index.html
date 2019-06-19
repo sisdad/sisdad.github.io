@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="utf-8">
+    <script src="script1.js"></script>
+    <link rel="stylesheet" href="./css1.css">
+<style type="text/css">
+  .active {
+    background-color: #4CAF50;
+    color: white;
+}
+.a1{
+  background-color: #00e4d6;
+  
+}
+</style>
+<body style="margin: auto;">
+<div w3-include-html="base.html"></div> 
+<div  class="div1">
+
+  <div style=" position: absolute; width:50%; height:auto; ">
+       <p style="text-align: center; font-size: 95px;">
+        I <br>
+        am <br>
+        UG Student
+        </p>
+ </div>
+  <div style="position: absolute; margin-left: 50%;  width: 50%;height: auto;">
+      <button style="" onclick="PrevImage()"><</button>  
+      <img style="border:20px solid #2a5491; margin-top: 10%;height: 400px;width: 80%;" src="images/c1.jpg" id="imgID">
+      <button onclick="NextImage()">></button> 
+
+   </div>
+
+
+<script type="text/javascript">
+  
+  var myImage = document.getElementById('imgID');
+  var imgArray = ["images/img0.jpg","images/img1.jpeg","images/img21.jpg","images/img7.jpg","images/img16.jpg",
+                  "images/img17.jpg","images/img04.jpg" ];
+  var index = 0;
+
+ 
+  slideit();
+</script>
+</div>
+</body>
+
+<script>
+includeHTML();
+</script>
+
+<script type="text/javascript">
+      const x = document.getElementById('a1');
+      x.setAttribute("class","aa");
+    </script>
+</html>

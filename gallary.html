@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+    <script src="script1.js"></script>
+    <style>
+ .div1{
+
+      position: absolute; 
+      margin-left: 15%; 
+      width: 85%;
+      height: 75%;
+      overflow: auto;
+ }       
+div.img {
+    margin: 5px 20px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    height: 180px
+}   
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body style="margin: auto;background:  #DAF7A6 ;">
+<div w3-include-html="base.html"></div> 
+<div  class="div1">
+
+
+<script type="text/javascript">
+ var imgArray = ["images/c1.jpg","images/c2.jpg","images/c3.jpg","images/c4.jpg", "images/c5.jpg","images/c6.jpg",
+                 "images/c7.jpg","images/c8.jpg","images/c9.jpg","images/c10.jpg","images/c11.jpg","images/c12.jpg",
+                 "images/c13.jpg","images/c14.PNG","images/c15.PNG","images/img1.PNG","images/img2.PNG","images/img3.PNG",
+                 "images/img4.PNG","images/img5.PNG","images/img6.PNG","images/img7.PNG","images/img8.PNG","images/img9.PNG","images/img10.PNG","images/img11.PNG","images/img12.PNG","images/img13.PNG","images/img14.PNG","images/img15.PNG","images/img16.PNG"];
+  for (var i = 0; i < 30; i++ ){
+    
+        document.write('<div class="img"><a><img src='+imgArray[i]+'  style="height: 100%;width: 100%;"></a></div>');
+ }
+
+
+</script>
+
+
+</div>
+</body>
+<script>
+includeHTML();
+</script>
+<!-- Mirrored from www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:02:58 GMT -->
+</html>
